@@ -345,6 +345,6 @@ if __name__ == '__main__':
     vk_api = vk.API(session)
     vk_api.auth()
     """
-    session = vk.AuthSession(app_id=7424949, user_login=89088641931, user_password='Rustam120100!')
+    session = vk.AuthSession(app_id=7424949, user_login=89088641931, user_password=)
     vk_api = vk.API(session)
 
