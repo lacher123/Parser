@@ -1,3 +1,4 @@
+from time import time as timer
 import time
 import vk
 import re
@@ -66,7 +67,12 @@ def enter_data(filename="data.txt"):
     with open(filename, 'r', encoding='utf-8') as file: 
         b = [] 
         for line in file:   
-            b.append(int(line[0:len(line) - 1]))  
+            k = []
+            s = line[1:-2].split('\'')
+            k.append(int(s[0][0:-2]))  
+            k.append(s[1])
+            k.append(int(s[-1][1:len(s[-1])]))
+            b.append(k)
     return b
 
 #пересечение множеств
@@ -304,30 +310,30 @@ def getLCRV(group_id, count):
     return resultSet
 
 #поиск групп по ключевому слову
-def search(keyword, offset, count):
-    itt = vk_api.groups.search(q=keyword, v=5.9)['count'] // count
+def search(keyword, count):
     res = []
-    for i in range(0, itt+1):
-        print(i)
-        time.sleep(2)
-        groups = vk_api.groups.search(q=keyword, offset = i*offset, count=count, v=5.9)['items']
-        stoper = 1
-        for group in groups:
-            p = []
-            stoper += 1
-            id = group['id']
-            if(stoper % 3 == 0):
-                time.sleep(1)
-            try:
-                count_members = vk_api.groups.getMembers(group_id=id, v=5.9)['count']
-                if(count_members < 2000):
-                    continue
-            except:
+    groups = vk_api.groups.search(q=keyword, sort=0, count=count, v=5.9)['items']
+    stoper = 1
+    tic = timer()
+    for group in groups:
+        p = []
+        stoper += 1
+        id = group['id']
+        if(stoper % 3 == 0):
+            time.sleep(1)
+        try:
+            count_members = vk_api.groups.getMembers(group_id=id, v=5.9)['count']
+            if(count_members < 2000):
                 continue
-            p.append(id)
-            p.append(group['name'])
-            p.append(count_members)
-            res.append(p)
+        except:
+            continue
+        p.append(id)
+        p.append(group['name'])
+        p.append(count_members)
+        res.append(p)
+    toc = timer()
+    print(toc-tic)
+
     res.sort(key=lambda list: list[2], reverse=True) 
     return res
 
@@ -341,7 +347,4 @@ if __name__ == '__main__':
     """
     session = vk.AuthSession(app_id=7424949, user_login=89088641931, user_password='Rustam120100!')
     vk_api = vk.API(session)
-    
-    result = search(keyword='программист', offset=1000, count=1000)
-    print(len(result))
-    save_data(result, 'Data/Groups.txt')
+
