@@ -1,0 +1,175 @@
+.net;desktop,web
+acmp;olympiad
+ai;data science
+algorithm;olympiad
+android;mobile
+angular;web
+api;
+app;
+ar;gamedev,mobile
+arduino;embedded
+asp;web
+assembler;embedded
+backend;web
+bsd;system administration
+bug;
+c#;desktop,mobile,gamedev
+c++;desktop,embedded,gamedev
+c;desktop
+cms;web
+code;
+codechef;olympiad
+codeforces;olympiad
+computer;
+cordova;mobile
+cpu;
+cryengine;gamedev
+csf;web
+css;web
+dart;mobile
+data;data science
+database;web
+debug;
+delphi;desktop
+dev;
+develop;
+digital;
+directx;gamedev
+django;web
+drupal;web
+flask;web
+flutter;mobile
+framework7;web,mobile
+framework;
+frontend;web
+gamedev;gamedev
+git;
+go;desktop
+golang;desktop
+gpu;
+gradle;mobile
+graphics;
+gulp;web
+gunicom;web,system administration
+hackathon;olympiad
+hackintosh;system administration
+haskell;data science
+html;web
+ica;data science
+icpc;olympiad
+information;
+ios;mobile
+it;
+java;desktop,embedded,mobile,gamedev
+javascript;web
+joomla;web
+jquery;web
+js;web
+kali;system administration
+kotlin;mobile
+lazarus;desktop
+linux;system administration
+lisp;data science
+mac;system administration
+magento;web
+mint;system administration
+mongo;web
+mono;
+mysql;web
+neerc;olympiad
+nerc;olympiad
+nercnews;olympiad
+network;
+neural;data science
+nginx;web
+node;web
+objective-c;desktop,gamedev,mobile
+opencart;web
+opengl;desktop,gamedev
+operating;
+os;
+pascal;desktop
+pca;data science
+perceptron;data science
+perl;desktop,web
+php;web
+platform;
+postgre;web
+postgresql;web
+prestashop;web
+program;
+programmer;
+programming;
+prolog;data science
+pwa;web
+python;data science,desktop,web
+r;data science
+react;web
+request;web
+rest;
+ruby;desktop,web
+sas;data science
+scala;desktop
+science;data science
+seo;
+server;system administration
+sharp;desktop
+soft;
+solaris;system administration
+sql;web
+svm;data science
+swift;mobile
+system;
+tech;
+technologies;
+tensorflow;data science
+timus;olympiad
+topcoder;olympiad
+typescript;web
+ubuntu;system administration
+unity;gamedev
+unity3d;gamedev
+unreal;gamedev
+vr;desktop,gamedev
+vue;web
+web;web
+webgl;web,gamedev
+windows;systemadminisration
+wordpress;web
+xamarin;desktop,mobile
+админ;system administration
+администрирование;system administration
+алгоритм;olympiad
+андроид;mobile
+ассемблер;embedded
+ардуино;embedded
+баг;
+бд;web
+бэкенд;web
+веб;web
+графика;
+джанго;web
+интернет;
+информатика;
+информационные;
+информация;
+контроллер;embedded
+компьютер;
+код;
+нано;
+мета;
+микроконтроллер;embedded
+микропроцессор;embedded
+паскаль;desktop
+питон;desktop,data science
+приложение;
+программирование;
+программист;
+процессор;
+разработка;
+сайт;web
+технологии;
+фласк;web
+фреймворк;
+фронтенд;web
+хакатон;olympiad
